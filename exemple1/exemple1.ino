@@ -3,10 +3,12 @@ extern ESP8266WebServer server;
 
 void engegar() {
   digitalWrite(D1, true);
+  server.send(200, "text/plain", "ON");
 }
 
 void apagar() {
   digitalWrite(D1, false);
+  server.send(200, "text/plain", "OFF");
 }
 
 

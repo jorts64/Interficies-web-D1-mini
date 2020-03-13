@@ -11,27 +11,38 @@
 <!-- Bottom bar -->
 <div class="w3-bottom">
   <div class="w3-bar w3-blue">
-    <a href="#" class="w3-bar-item w3-button">&#9664; Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-middle"> &#128316; Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-right">Link 3 &#9654; </a>
+    <a href="maquinari.html" class="w3-bar-item w3-button w3-right">Maquinari &#9654; </a>
   </div>
 </div>
 <!-- Page Top Content -->
 <!--  *********** CANVIAR My Page PEL TÍTOL DE LA PÀGINA **************   -->
 <div class="w3-teal">
   <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <span class="w3-center w3-padding-16">My Page</span>
+  <span class="w3-center w3-padding-16">Control rel&eacute;</span>
 </div>
 
 <!--  ************* INICI CONTINGUT PROPI DE LA PÀGINA ****************   -->
+<p></br></br></br></p>
+<p>
+<button class="w3-button w3-block w3-jumbo w3-green" onclick="engega()">Engega</button>
+</p>
+<p></p>
+<button class="w3-button w3-block w3-jumbo w3-red" onclick="apaga()">Apaga</button>
+</p>
 
-<img src="img_car.jpg" alt="Car" style="width:100%">
 
-<div class="w3-container">
-<p>This sidebar is hidden by default, (style="display:none")</p>
-<p>You must click on the "hamburger" icon (top left) to open it.</p>
-<p>The sidebar will hide a part of the page content.</p>
-</div>
+<script>
+function engega() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "on", false);
+  xhttp.send();
+}
+function apaga() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "off", false);
+  xhttp.send();
+}
+</script>
 
 <!--  *************** FI CONTINGUT PROPI DE LA PÀGINA *****************   -->
 
